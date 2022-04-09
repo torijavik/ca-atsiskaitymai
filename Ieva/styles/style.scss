@@ -1,97 +1,165 @@
 // Global css
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
+}
+
+.sign-up {
+  h5 {
+    color: #ff3998;
+    text-transform: uppercase;
   }
-  
-  
-  .sign-up {
-    h5 {
-      color: #FF3998  ;
-      text-transform: uppercase;
+  p {
+    color: rgb(93, 93, 93);
+  }
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 20px 0px 20px 20px;
+}
+
+.button {
+  button {
+    background-color: white;
+    border-radius: 100px;
+    border: solid 3.5px #ff3939;
+    text-transform: capitalize;
+    padding: 0.8em 2em 0.8em 2em;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #ff3939;
+    border: solid 3.5px white;
+  }
+}
+
+.left {
+  box-shadow: 5px black;
+}
+
+.right {
+  img {
+    width: 100px;
+    float: right;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    margin: 20px;
+  }
+  nav {
+    font-weight: lighter;
+    margin: 20px;
+    a {
+      color: black;
+      text-decoration: none;
+      margin: 5px;
+      width: 7px;
     }
-    p {
-      color: rgb(93, 93, 93);
+    .signup {
+      color: #ff3998;
     }
+  }
+}
+
+// Global css end
+@media screen and (max-width: 736px) {
+  nav {
+    display: none;
+  }
+
+  .burger {
+    margin: 20px;
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
-    margin: 20px 0px 20px 20px
   }
-  
-  .button {
-    button {
-      background-color: white;
-      border-radius: 100px;
-      border: solid 3.5px #FF3939;
-      text-transform: capitalize;
-      padding: 0.8em 2em 0.8em 2em;
-    }
-    button:hover {
-      background-color: #FF3939;
-      border: solid 3.5px white;
-    }
+
+  .burger-particle {
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 5px;
+    width: 20px;
+    height: 3px;
+    margin: 2px;
   }
-  
-  .left {
-    box-shadow: 5px black;
+
+  .advert {
+    background: linear-gradient(280deg, #39ffa0, #ff8139, #ff3939);
+    padding: 75px 20px 10px 20px;
   }
-  
-  .right {
-    img { width:100px;
-      float:right;
-    }
+
+  .desktop-img {
+    display: none;
   }
-  
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
+
+  .toggle-client {
+    display: none;
+  }
+
+  .clients {
+    display: grid;
+    grid-template-areas:
+      "boom blimp"
+      "qrco droplet";
+    padding: 10px;
+    text-align: center;
+  }
+
+  .client-contact {
+    margin: 10px;
     img {
-      margin: 20px;
-    }
-    nav {
-      font-weight: lighter;
-      margin: 20px;
-      a {
-        color: black;
-        text-decoration: none;
-        margin: 5px;
-        width: 7px;
-      }
-      .signup {
-        color: #FF3998;
-      }
+      width: 150px;
     }
   }
-  
-  // Global css end
-  @media screen and (max-width: 736px) {
-    nav {
-      display: none;
+
+  .auction-text {
+    p {
+      color: gray;
     }
-  
-    .burger {
-      margin: 20px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
+
+    a {
+      color: rgb(113, 113, 113);
+      text-decoration-color: rgb(82, 82, 82);
+      text-decoration-thickness: 2px;
     }
-  
-    .burger-particle {
-      flex-direction: column;
-      background-color: gray;
-      border-radius: 5px;
-      width: 20px;
-      height: 3px;
-      margin: 2px;
+    .auction-items {
+        display: grid;
+        grid-template-areas:
+        "img img"
+        "series bid"
+        "name price"
+        "number time-left";
+        
     }
-  
-    .advert {
-        background: linear-gradient(280deg, #39FFA0, #FF8139, #FF3939);
+    
+    .product-img {
+        grid-area: "img";
     }
-  
+    .series {
+        grid-area: "series";
+    }
+    .bid {
+        grid-area: "bid";
+    }
+    .name {
+        grid-area: "name";
+    }
+    .price {
+        grid-area: "price";
+    }
+    .number {
+        grid-area: "number";
+    }
+    .time-left {
+        grid-area: "time-left";
+    }
   }
-  
-  @media screen and (min-width: 737px) {
-  }
+}
+
+@media screen and (min-width: 737px) {
+}
