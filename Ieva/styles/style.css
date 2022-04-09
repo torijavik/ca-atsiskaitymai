@@ -2,9 +2,81 @@ body {
   font-family: sans-serif;
 }
 
-main h5 {
-  color: #ff00ae;
+.sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px 20px 20px;
+}
+
+.sign-up h5 {
+  color: #FF3998;
   text-transform: uppercase;
+}
+
+.sign-up p {
+  color: #5d5d5d;
+}
+
+.button button {
+  background-color: white;
+  border-radius: 100px;
+  border: solid 3.5px #FF3939;
+  text-transform: capitalize;
+  padding: 0.8em 2em 0.8em 2em;
+}
+
+.button button:hover {
+  background-color: #FF3939;
+  border: solid 3.5px white;
+}
+
+.left {
+  -webkit-box-shadow: 5px black;
+          box-shadow: 5px black;
+}
+
+.right img {
+  width: 100px;
+  float: right;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  margin: 20px;
+}
+
+header nav {
+  font-weight: lighter;
+  margin: 20px;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+  width: 7px;
+}
+
+header nav .signup {
+  color: #FF3998;
 }
 
 @media screen and (max-width: 736px) {
@@ -12,6 +84,7 @@ main h5 {
     display: none;
   }
   .burger {
+    margin: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -19,12 +92,22 @@ main h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .burger-particle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: gray;
     border-radius: 5px;
     width: 20px;
-    height: 5px;
+    height: 3px;
+    margin: 2px;
+  }
+  .advert {
+    background: linear-gradient(280deg, #39FFA0, #FF8139, #FF3939);
   }
 }
 /*# sourceMappingURL=style.css.map */
