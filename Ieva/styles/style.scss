@@ -12,6 +12,7 @@ body {
     color: rgb(93, 93, 93);
   }
   display: flex;
+  display: row;
   flex-wrap: nowrap;
   align-items: center;
   margin: 20px 0px 20px 20px;
@@ -117,6 +118,10 @@ header {
     }
   }
 
+.auction {
+    margin:20px
+}
+
   .auction-text {
     p {
       color: gray;
@@ -159,6 +164,29 @@ header {
         grid-area: "time-left";
     }
   }
+
+.version-2 {
+    padding:0;
+    margin:0;
+    .button {
+        
+    }
+
+    .right {
+        align-self: flex-end;
+        border-bottom: solid 1px gray;
+        padding: 0;
+        margin:0;
+        height: 100%;
+    }
+    .left, .button {
+        padding:0;
+        margin: 0;
+    }
+    .left {
+        border-bottom: solid 1px gray;
+    }
+}
 }
 
 @media screen and (min-width: 737px) {
