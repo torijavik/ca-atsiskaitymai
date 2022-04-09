@@ -1,0 +1,28 @@
+// Global css
+body {
+    font-family: sans-serif;
+    }
+    
+    main h5 {
+    color:rgb(255, 0, 174);
+    text-transform:uppercase;
+    }
+    
+    // Global css end
+    @media screen and (max-width: 736px){
+        nav {
+            display:none
+        }
+    
+        .burger {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .burger-particle{
+            background-color: gray;
+            border-radius: 5px;
+            width: 20px;
+            height:5px;
+        }
+    }
