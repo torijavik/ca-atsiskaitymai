@@ -1,0 +1,413 @@
+/* Global css */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+nav div.container {
+  padding: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div.container div.navlogo {
+  max-width: 100%;
+}
+
+#menu {
+  display: none;
+}
+
+nav div.container div.navlinks a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav div.container div.navlinks a:nth-last-child(1) {
+  color: #f129a7;
+}
+
+section.SignUp div.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 5% 2.5rem 4.5rem;
+  line-height: 2rem;
+  position: relative;
+}
+
+section.SignUp div.container img {
+  height: 35rem;
+  width: 35rem;
+  object-fit: contain;
+}
+
+section.SignUp:last-of-type div.container {
+  border-bottom: solid 1px lightgrey;
+  border-top: solid 1px lightgrey;
+  margin: 0 2.5rem;
+  padding-bottom: 0;
+}
+
+section.SignUp div.container div.text {
+  margin-right: 5rem;
+}
+
+section.SignUp:last-of-type div.container div.text {
+  margin-right: 2rem;
+}
+
+section.SignUp:last-of-type div.container div.text h1 {
+  font-size: 4rem;
+}
+
+section.SignUp div.container h3 {
+  color: #f129a7;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+section.SignUp div.container h1 {
+  width: 100%;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  white-space: normal;
+}
+
+section.SignUp div.container p {
+  color: darkslategrey;
+}
+
+section.SignUp div.container button {
+  color: black;
+  border: solid 3.5px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 35px;
+  padding: 1rem 2rem;
+}
+
+section.SignUp div.container button:hover {
+  font-weight: bolder;
+  box-shadow: 0px 0px 0px #fff inset;
+  background-image: linear-gradient(
+      to right,
+      #ff487d,
+      #ff5242,
+      #ff8139,
+      #c6b169
+    ),
+    linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
+  cursor: pointer;
+}
+
+section.EarlyBirds {
+  background-color: white;
+}
+
+section.EarlyBirds div.container {
+  margin: 0 2rem;
+  background-image: url(Images/background.png);
+  background-size: cover;
+  background-repeat: none;
+  padding: 6.5rem 1.5rem 2.5rem 3.5rem;
+  border-radius: 15px;
+}
+
+section.EarlyBirds h1 {
+  font-weight: 400;
+}
+
+section.Companies div.container {
+  margin: 4rem 0 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section.Companies div.container img {
+  height: 2.5rem;
+}
+
+section.Products div.container {
+  padding: 3.5rem;
+}
+
+section.Products div.container a {
+  color: darkslategrey;
+  font-weight: 500;
+}
+
+section.Products p {
+  color: darkslategrey;
+}
+
+section.Products div.container div.Sales {
+  position: relative;
+  margin-top: 3rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+section.Products div.container div.Sales div.Sale {
+  margin: 0 1rem 0 1rem;
+}
+
+section.Products div.container div.Sales div.Sale div.Description {
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+  margin-top: -6px;
+}
+
+section.Products div.container div.Sales div.Sale div.image-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.Products div.container div.Sales div.Sale div.image-text p {
+  line-height: 0.1;
+}
+
+section.Products div.container div.Sales div.Sale div.image-text p.series {
+  color: rgb(251, 133, 24);
+  font-size: 0.7rem;
+}
+
+section.Products div.container div.Sales div.Sale div.image-text p.topbid {
+  color: darkslategrey;
+  font-size: 0.6rem;
+}
+
+section.Products div.container div.Sales div.Sale div.name-price {
+  width: 100%;
+  display: flex;
+}
+
+section.Products div.container div.Sales div.Sale div.name-price p.name {
+  flex: 2;
+}
+
+section.Products div.container div.Sales div.Sale p.price {
+  display: flex;
+  margin-left: 1rem;
+}
+section.Products div.container div.Sales div.Sale p.price img {
+  margin: 0 0.2rem;
+}
+section.Products div.container div.Sales div.Sale div.details {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(47, 79, 48);
+  font-size: 0.9rem;
+}
+
+footer div.container {
+  padding: 2.5rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: darkslategrey;
+}
+
+footer div.container div.footer-left div.socmedia {
+  display: flex;
+  align-items: space-evenly;
+}
+
+footer div.container div.footer-left div.socmedia img {
+  width: 17px;
+  height: 18px;
+  margin: 0.5rem;
+}
+
+footer div.container div.footer-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+footer div.container div.footer-right div {
+  width: 15%;
+  margin: 0 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+footer div.container div.footer-right h3 {
+  font-size: 1rem;
+}
+
+footer div.container div.footer-right div a {
+  text-decoration: none;
+  color: darkslategrey;
+  line-height: 2rem;
+}
+
+div.Copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3.5rem 3rem 3.5rem;
+  color: grey;
+}
+
+.Currency {
+  height: 1rem;
+}
+
+.name-price {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+/* Global css end */
+
+/* Mobile version */
+
+@media screen and (max-width: 768px) {
+  nav div.container {
+    padding: 1.5rem;
+  }
+
+  nav div.container div.navlogo img {
+    max-width: 70%;
+  }
+
+  #menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  nav div.container div.navlinks {
+    display: none;
+  }
+
+  section.SignUp div.container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 2.5rem 30% 2.5rem 1.5rem;
+    line-height: 1.5rem;
+    height: 100%;
+  }
+
+  section.SignUp div.container div.text {
+    margin-right: 0;
+  }
+
+  section.SignUp:last-of-type div.container {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  section.SignUp:last-of-type div.text {
+    padding-bottom: 2rem;
+  }
+
+  section.SignUp div.container img {
+    position: absolute;
+    top: -1rem;
+    right: -150px;
+    height: 20rem;
+    width: 20rem;
+  }
+
+  section.SignUp:last-of-type div.container img {
+    position: right;
+    top: 2rem;
+    right: -140px;
+    height: 23rem;
+    width: 23rem;
+  }
+
+  section.SignUp:last-of-type div.container div.text h1 {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  section.SignUp div.container h1 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  section.SignUp div.container h3 {
+    margin-bottom: 0;
+    font-size: 0.7rem;
+  }
+
+  section.EarlyBirds div.container {
+    background-position: -200px;
+    margin: 2rem 0;
+    border-radius: 0;
+    padding: 4.5rem 0rem 1rem 1remrem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  section.EarlyBirds div.container h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  section.Companies div.container {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
+  section.Companies div.container img {
+    width: 35%;
+    height: 2.5rem;
+    margin: 1rem;
+  }
+
+  section.Companies div.container img:last-child {
+    display: none;
+  }
+
+  section.Products div.container {
+    padding: 2rem 0rem 2rem 1.5rem;
+  }
+
+  section.Products div.container h1,
+  p {
+    margin-right: 1.5rem;
+  }
+
+  footer div.container {
+    flex-flow: row wrap;
+    padding: 2.5rem 1.5rem;
+  }
+
+  footer div.container div.footer-right {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: -1rem;
+  }
+
+  footer div.container div.footer-right div {
+    width: 30%;
+    margin: 0 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.Copyright {
+    margin: 3rem 1rem 3rem 1rem;
+    color: grey;
+  }
+
+  div.Copyright p:last-of-type {
+    display: none;
+  }
+}
