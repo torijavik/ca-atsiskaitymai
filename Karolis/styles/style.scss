@@ -1,0 +1,664 @@
+//GENERAL PROPERTIES
+
+.overflow {
+  overflow: hidden;
+}
+
+body {
+  width: 26.75rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  margin: 0 auto;
+  font-family: "Inter";
+}
+
+@mixin d-flex($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+$font: "Inter";
+
+//HEADER
+//NAVBAR
+header {
+  width: 22.75rem;
+  height: 2.25rem;
+  margin: 2rem;
+  .headerFlex {
+    width: 100%;
+    @include d-flex(center, space-between, row);
+    img {
+      width: 12.375rem;
+      height: 2.25rem;
+    }
+    .burger {
+      width: 1.5rem;
+      height: 1.375rem;
+      @include d-flex(center, space-around, column);
+    }
+    .burger > div {
+      width: 1.5rem;
+      height: 0.25rem;
+      background-color: #999999;
+      border-radius: 0.1875rem;
+    }
+    .menuFull {
+      display: none;
+    }
+  }
+}
+
+//HERO
+//LEFT TEXT
+//RIGHT IMAGE
+.hero {
+  width: 100%;
+  height: 28rem;
+  margin-left: 2rem;
+  @include d-flex(center, space-between, row);
+  div {
+    padding-left: 0;
+    h4 {
+      width: 10.6rem;
+      height: 1.1875rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.21rem;
+      letter-spacing: 0.1em;
+      color: #ff3998;
+    }
+    h1 {
+      width: 17.125rem;
+      height: 7.25rem;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 3rem;
+      line-height: 3.6306rem;
+      color: #111111;
+    }
+    p {
+      width: 17.125rem;
+      height: 7.5rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+      color: #555555;
+    }
+    .SignUpBtn {
+      width: 11.75rem;
+      height: 4.6875rem;
+      border-radius: 4rem;
+      background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+      @include d-flex(center, center, row);
+      a {
+        width: 4.75rem;
+        height: 1.875rem;
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: #111111;
+      }
+    }
+  }
+  //RIGHT IMAGE
+  .alienImage {
+    width: 10.9806rem;
+    height: 17.375rem;
+    position: relative;
+    width: 11.8513rem;
+    height: 17.375rem;
+    left: 0.75rem;
+    top: -13.75rem;
+  }
+  .elipse1 {
+    width: 10.4288rem;
+    height: 10.4288rem;
+    background: #ff3998;
+    filter: blur(6.9211rem);
+    position: relative;
+    top: 8rem;
+    left: 4rem;
+  }
+  .elipse2 {
+    width: 7.2531rem;
+    height: 7.2531rem;
+    background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
+    filter: blur(6.9211rem);
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+  }
+}
+
+//UPSELL
+.upsell {
+  width: 100%;
+  height: 20.375rem;
+  margin-top: 5.045rem;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-position: 82%;
+  div {
+    padding: 6.25rem 2rem 2rem 2rem;
+
+    h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 0;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+    }
+  }
+}
+
+//PRESS
+.press {
+  width: 22.75rem;
+  height: 7.3125rem;
+  padding: 4rem 2rem 3.5rem 2rem;
+  .row1 {
+    @include d-flex(center, space-between, row);
+    flex: 1;
+    flex-wrap: wrap;
+    padding-bottom: 1.7219rem;
+
+    .booms {
+      width: 13rem;
+      height: 2.5288rem;
+    }
+    .fullScreen {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+    .blimp {
+      width: 9.625rem;
+      height: 2.8869rem;
+    }
+    .qrco {
+      width: 8.295rem;
+      height: 2.8719rem;
+    }
+    .drop {
+      width: 9.7575rem;
+      height: 2.5294rem;
+    }
+  }
+}
+
+//SHOWCASE
+.showcase {
+  width: 22.75rem;
+  margin: 0rem 2rem 0rem 2rem;
+  .showcaseText {
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+      color: #555555;
+      text-align: justify;
+      margin: 0;
+      padding-bottom: 2.5rem;
+    }
+
+    span {
+      color: inherit;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  .cardBox {
+    @include d-flex(flex-end, flex-start, row);
+    gap: 2.5rem;
+    padding-bottom: 5.75rem;
+    .card {
+      width: 18.125rem;
+      height: 25rem;
+      background-color: #eeeeee;
+      border-radius: 1rem;
+
+      .imgcard {
+        width: 18.125rem;
+        height: 17.375rem;
+      }
+      .cardTable {
+        @include d-flex(center, space-between, row);
+        padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
+
+        .cardTableLeft {
+          @include d-flex(flex-start, center, column);
+          gap: 0.75rem;
+          .tier1Left {
+            width: 5.375rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #ff8139;
+          }
+          .name {
+            width: 6.8125rem;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            color: #111111;
+          }
+          .nftNr {
+            width: 4.0625rem;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            color: #777777;
+          }
+        }
+        .cardTableRight {
+          @include d-flex(flex-end, center, column);
+          gap: 0.75rem;
+          .tier1Right {
+            width: 3rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 100%;
+            color: #777777;
+          }
+          .price {
+            width: 100px;
+            font-weight: 500;
+            font-size: 1.1875rem;
+            line-height: 100%;
+            color: #111111;
+            .ethLogo {
+              width: 0.8125rem;
+              height: 1.375rem;
+            }
+          }
+          .timeLeft {
+            width: 4.875rem;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 100%;
+            color: #777777;
+          }
+        }
+      }
+    }
+  }
+  //HIDE NON SLIDE CARDBOX
+  .Full{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+//DIVIDER
+.divider {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #eeeeee;
+  margin-bottom: 4rem;
+}
+//FOOTER UPSELL
+.fUpsell {
+  @include d-flex(center, center, row);
+  width: 100%;
+  height: 28rem;
+  margin-left: 2rem;
+  padding-bottom: 4.6875rem;
+  div {
+    padding-left: 0;
+    h4 {
+      width: 10.6rem;
+      height: auto;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.21rem;
+      letter-spacing: 0.1em;
+      color: #ff3998;
+      padding-top: 4rem;
+      padding-bottom: 1.5rem;
+      margin: 0;
+    }
+    h1 {
+      width: 274px;
+      height: auto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 3.5rem;
+      line-height: 3.6306rem;
+      color: #111111;
+      margin: 0;
+      padding-bottom: 1.5rem;
+    }
+    p {
+      width: 12.9375rem;
+      height: auto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+      color: #555555;
+      margin: 0;
+      padding-bottom: 1.5rem;
+    }
+    .SignUpBtn {
+      width: 11.75rem;
+      height: 4.6875rem;
+      border-radius: 4rem;
+      background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+      @include d-flex(center, center, row);
+      a {
+        width: 4.75rem;
+        height: 1.875rem;
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: #111111;
+      }
+    }
+  }
+  //RIGHT IMAGE
+  .greenLady {
+    width: 12.875rem;
+    height: 29.1875rem;
+    position: relative;
+    top: 4.1875rem;
+    left: -2.625rem;
+  }
+}
+
+.slider {
+  width: 100%;
+  max-width: 37.5rem;
+  height: 25rem;
+  margin: 1.25rem;
+  text-align: center;
+  border-radius: 1.25rem;
+  position: relative;
+}
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+//FOOTER
+.footer {
+  .container {
+    padding: 0 10.1875rem 4rem 2rem;
+    margin: 0;
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 100%;
+    }
+    .SocialMedia {
+      @include d-flex(center, space-between, row);
+      width: 7.375rem;
+    }
+    .footerLinksContainer {
+      .footerLinks {
+        @include d-flex(flex-start, space-between, row);
+        width: 16.25rem;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          div {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.1875rem;
+            letter-spacing: 0.1em;
+            padding-bottom: 1.75rem;
+          }
+          li {
+            padding-bottom: .5rem;
+            a {
+              text-decoration: none;
+              color: #555555;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    padding-left: 2rem;
+    padding-bottom: 6.5625rem;
+    width: 16.75rem;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 100%;
+    color: #999999;
+  }
+  .launching {
+    visibility: hidden;
+    padding-bottom: 6.5625rem;
+    width: 14.0625rem;
+    height: 1.25rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #999999;
+  }
+}
+
+//SLIDER
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.slider {
+  width: 100%;
+  max-width: 37.5rem;
+  height: 25rem;
+  margin: 1.25rem;
+  text-align: center;
+  border-radius: 1.25rem;
+  position: relative;
+}
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+@media screen and (min-width: 30rem) {
+  body {
+    width: 80rem;
+    padding: 4.375rem 5rem 0rem 5rem;
+    margin: 0 auto;
+    .overflow {
+      overflow: visible;
+    }
+    header {
+      width: 100%;
+      padding-bottom: 12.8125rem;
+      .headerFlex {
+        //removing the burger menu
+        .burger {
+          display: none;
+        }
+        width: 100%;
+        @include d-flex(center, space-between, row);
+        .menuFull {
+          @include d-flex(center, flex-end, row);
+          list-style: none;
+          gap: 1.75rem;
+          li {
+            a {
+              text-decoration: none;
+              color: #555555;
+              font-size: 1.25rem;
+            }
+            .signUp {
+              color: #ff3998;
+            }
+          }
+        }
+      }
+    }
+    .hero {
+      .heroLeft {
+        width: 100%;
+        height: 100%;
+        h1 {
+          width: 620px;
+          height: 14.5rem;
+          font-weight: 900;
+          font-size: 6rem;
+          line-height: 7.25rem;
+          margin: 0;
+        }
+        p {
+          width: 33.5625rem;
+          height: 3.75rem;
+          font-weight: 400;
+          font-size: 1.25rem;
+          line-height: 150%;
+        }
+      }
+      .alienImagePos {
+        position: relative;
+        top: 7rem;
+        left: -10rem;
+        .elipse1 {
+          width: 18.75rem;
+          height: 12.5rem;
+          background: #ff3998;
+          filter: blur(3.125rem);
+          position: relative;
+          top: 12rem;
+          left: 3rem;
+        }
+        .elipse2 {
+          width: 25rem;
+          height: 6.25rem;
+          background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
+          filter: blur(5rem);
+          position: relative;
+          top: 12rem;
+          left: -2rem;
+        }
+        .alienImage {
+          width: 20.5rem;
+          height: 32.4375rem;
+        }
+      }
+    }
+    .upsell {
+      width: 100%;
+      margin-top: 11.375rem;
+    }
+    .press {
+      width: 100%;
+      height: auto;
+      padding: 7.5rem 0 7.5rem 0;
+      .row1 {
+        @include d-flex(center, space-between, row);
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0;
+        .booms {
+          display: none;
+        }
+        .boom {
+          visibility: visible;
+          width: 13.5075rem;
+          height: 2.5438rem;
+          padding: 0;
+          margin: 0;
+        }
+        .OpenDoor {
+          visibility: visible;
+          width: 12.1725rem;
+          height: 2.5438rem;
+        }
+      }
+    }
+    .showcase {
+      width: 100%;
+      margin: 0;
+      .Full{
+        visibility: visible;
+        height: 100%;
+      }
+      .sliderContainer{
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+      .slides {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    }
+    .fUpsell {
+      width: 100%;
+      div {
+        width: 100%;
+        h1 {
+          width: 100%;
+        }
+        p {
+          width: 33.5625rem;
+        }
+      }
+      .greenLady {
+        width: 12.875rem;
+        height: 29.1875rem;
+        position: relative;
+        left: -12.5rem;
+      }
+    }
+    .footer {
+      width: 100%;
+      .container {
+        width: 100%;
+        @include d-flex(center, center, row);
+        .footerLinksContainer {
+          width: 100%;
+          @include d-flex(flex-start, center, row);
+          gap: 4.6875rem;
+        }
+      }
+      .copyRightFooter {
+        @include d-flex(center, space-between, row);
+        .launching {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
