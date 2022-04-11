@@ -1,0 +1,736 @@
+/*html geriausiai veikai 428px pločio ekranuose ir 1440px
+    geriausias visualus rezultatas 1440px ekrana atsidarius atsidaryti dev tools ir pasirinkt mobilaus yrenginio peržiūra ir 
+    tada nusistayti 428px dydį ekranui*/
+
+$backGraundColor: rgb(255, 255, 255); //čia pakeitus spalvą bagraund pasikeičia ir sign up mygtukams bent taip turėtų būti
+$textColor: #ff3998;
+$fontInter: Inter; //beprasmiškai padariau $fontInter nes vėliau kitus fontus tiesiai į kodą įrašiau
+
+/*manau bereikalo @mixin leftMargin() panaudojau praranda prasmę ir per visą 
+dokumentą reik naudot kai galėjau konteineriui viena kart 
+panaudot o ne atskiriems elementasm kaip dabar*/
+@mixin leftMargin() {
+  margin-left: 32px;
+}
+@mixin flex_center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex_row() {
+  display: flex;
+  flex-direction: row;
+}
+body {
+  background-color: $backGraundColor;
+}
+@media screen and  (max-width: 428px){
+  .body {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #555555;
+  background-color: $backGraundColor;
+  }
+  html, body {//nzn ar veikia.
+  max-width: 100%;
+  overflow-x: hidden;
+  }
+  nav {
+  @include flex_row();
+  @include leftMargin();
+  padding-left: 0;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+      .img_logo {
+        height: 36px;
+        width: 36px;
+        padding-top: 10px;
+    }
+  }
+  .burger {
+  @include flex_center();
+  flex-direction: column;
+  position: sticky;
+  top: 40px;
+  left: 320px;
+  background-color: rgba($color: gray, $alpha: 0);
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  .burger_bun {
+    display: flex;
+    margin: 1px;
+    background-color: #999999;
+    width: 24px;
+    height: 4px;
+    border-radius: 3px;
+   }
+  }
+.link_stile {
+  text-decoration: none;
+  font-family: Varela Round;
+  font-size: 48px;
+  font-weight: 400;
+  color: black;
+  }
+.menu {
+  display: none;
+  }
+.pink_bloob {
+  position: absolute;
+  left: 290px;
+  top: 48px;
+  height: 278px;
+  width: 175px;
+  }
+.pink {
+  @include leftMargin();
+  font-family: $fontInter;
+  color: $textColor;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  }
+.div_box_h1 {
+  width: 300px;
+  margin: 0;
+  h1 {
+    @include leftMargin();
+    font-family: $fontInter;
+    font-weight: 900, bold;
+    font-size: 48px;
+    }
+  }
+.div_box_p {
+  width: 266px;
+  p {
+    @include leftMargin();
+    font-family: $fontInter;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+    font-style: normal;
+    color: #555555;
+    }
+  }
+.background_gradient {
+  width: 428px;
+  height: 326px;
+  background: radial-gradient(ellipse at top 554.46px left -35.78px, #ff3998, transparent),
+    radial-gradient(ellipse at left 98.31px top 520.84px, #ff8139, transparent),
+    radial-gradient(ellipse at left 303.61px top 535.11px, #39FFA0, transparent),
+    radial-gradient(ellipse at left -34.11px top 385.35px, #ff3939, transparent);
+    h2 {
+      @include leftMargin();
+      margin-bottom: 10px;
+      font-family: $fontInter;
+      font-size: 40px;
+      font-weight: 500;
+      padding-top: 120px;
+      margin-left: 32px;
+      color: #111111
+    }
+    p {
+      @include leftMargin();
+      margin-top: 0px;
+      font-family: $fontInter;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+.flex_a {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+.flex_a :nth-child(1) {//čia nežinau kaip švariau kodas turėtų atrodyt taip kaip dabar ar pvz.:.flex_a :nth-child(2) {order: 2;}
+  order: 1;
+  }
+.flex_a :nth-child(2) {
+  order: 2;
+  }
+.flex_a :nth-child(3) {
+  order: 3;
+  }
+.flex_a :nth-child(4) {
+  order: 5;
+  }
+.flex_a :nth-child(5) {
+  order: 4;
+  }
+ 
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 14px;
+  width: 140px;  
+  }
+.img {
+  height: 40px;
+  width: 40px;
+  }
+.included_mobile{  
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 30px;
+  color: #999999;
+  }
+  
+.excluded_mobile, span, .door {
+    display: none
+  }
+.container_h2 {
+  @include leftMargin();
+  h2{
+  font-family: $fontInter;
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 10px;  
+  }
+  p {
+    font-family: $fontInter;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+  }
+  a {
+    font-family: $fontInter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #555555;
+    }
+  }
+
+/*vėliau sugryžti pakoreguot font ir dydį*/
+.btn_Baground {
+  @include flex_center();
+  margin-left: 32px;
+  background-image: url(/imiges/color_gradient.png);
+  background-size: 100%;
+  border: none;
+  border-radius: 20px;
+  width: 86px;
+  height: 40px;
+  cursor: grab;
+  button {
+    background-color: $backGraundColor;
+    border-radius: 14px;
+    border: none;
+    padding: 20;
+    width: 76px;
+    height: 30px;
+    cursor: grab;
+    }
+  }
+  /*čia .flex_f1_c3, .flex_f1_c4 komentarai padaryti kodo rašymo eigoje su intensiją šitą koda nukopijuoti
+  desctop versijai ir kad tik tereiktu vaikus atkomentuot ir kodas iškar veiktu kas buvo ir padaryta*/
+.flex_f1 {
+  @include leftMargin();
+  display: flex;
+  .flex_f1_c1, .flex_f1_c2/*, .flex_f1_c3, .flex_f1_c4*/ { 
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    .flex_f1_c1_c1, .flex_f1_c2_c1/*, .flex_f1_c3_c1, .flex_f1_c4_c1*/ {
+      padding: 18px;
+      background-color: #EEEEEE;
+      border-radius: 0 0 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-count: 2;
+      column-gap: 50px;
+      .gloop {
+        margin: 0;
+        color: #FF8139;
+        font-size: 12px;
+        font-family: $fontInter;
+        font-weight: 500;
+      }
+      .bid {
+        margin: 0;
+        color: #777777;
+        font-size: 12px;
+        font-family: $fontInter;
+        font-weight: 500;
+      }
+      .item_name_price {
+        color: #111111;
+        font-size: 20px;
+        font-family: $fontInter;
+        font-weight: 500;
+      }
+      .dark3 {
+        margin: 0;
+        color: #777777;
+        font-size: 18px;
+        font-family: $fontInter;
+        font-weight: 400;
+        }
+      }
+    }
+  }
+section {
+  border-top: 2px solid #EEEEEE;
+  width: 428px;
+  }
+  h6 {
+    @include leftMargin();
+    color: $textColor;
+    font-family: $fontInter;
+    font-size: 16px;
+    }
+    h1 {
+      @include leftMargin();
+      font-family: $fontInter;
+      font-weight: 900, bold;
+      font-size: 56px;
+        }
+  .img_green_woman_posision {
+    position: absolute;
+    top: 1910px;
+    left: 240px;
+    height: 467px;
+    width: 206px;
+  }
+  .section_b {
+    display: flex;
+    flex-direction: column;
+    height: 265px;
+    border-bottom: 2px #EEEEEE solid;
+    p {
+      align-self: flex-start;
+      width: 207px;
+      @include leftMargin();
+      margin-top: 50px;
+      font-family: $fontInter;
+      font-weight: 400;
+      color: #555555;
+    }
+  }
+  .logo_foot {
+    @include leftMargin();
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .img_logo {
+      height: 36px;
+      width: 36px;
+      padding-top: 10px;
+      }
+    }
+    .link_stile_foot {
+      text-decoration: none;
+      font-family: Varela Round;
+      font-size: 28px;
+      font-weight: 900;
+      color: black;
+    }
+    .font {
+      text-decoration: none;
+      font-family: Inter;
+      color: #555555;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .foot_f {
+      @include leftMargin();
+    }
+    .flex_r {
+      @include leftMargin();
+      display: flex;
+      align-items: flex-start;
+      img {
+        padding: 5px;
+        height: 18px;
+        width: 18px;
+      }
+    }
+    .flex_f_footer {
+      @include leftMargin();
+      display: flex;
+      flex-wrap: wrap;
+      column-count: 2;
+      column-gap: 100px;
+    .flex_f_footer_links {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 16px;
+        color: #555555
+        }
+      }
+    }
+    .Copyright {
+      margin-left: 30px;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 20px;
+      color: #999999;
+    }
+    .exclude_mobile_Copyright {
+      display: none;
+    }
+  
+}
+/*desktop*/
+@media screen and  (min-width: 429px) and (max-width: 1440px) {
+.body {//čia @mixin reiktų panaudot
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #555555;
+    background-color: $backGraundColor;
+  }
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .img_logo {
+    height: 36px;
+    width: 36px;
+    padding-top: 10px;
+  }
+  .link_stile {
+      text-decoration: none;
+      font-family: Varela Round;
+      font-size: 28px;
+      font-weight: 900;
+      color: black;
+    }
+  }
+.burger {
+  display: none;
+  }
+.flex_d {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 80px;
+  }
+.menu {
+  display: flex;
+  div {
+    padding: 10px;
+    a {
+      text-decoration: none;
+      font-family: Inter, regular;
+      font-size: 20px;
+      font-weight: 400;
+      color: #555555;
+    }
+    .font_pink {
+      color: $textColor;
+      }
+    } 
+  }
+.pink {
+  margin-left: 80px;
+  font-family: $fontInter;
+  color: $textColor;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  }
+.div_box_h1 {
+  width: 620px;
+  margin: 0;
+  h1 {
+    margin-left: 80px;
+    font-family: $fontInter;
+    font-weight: 900, bold;
+    font-size: 96px;
+    }
+  }
+.div_box_p {
+  width: 600px;
+  p {
+    margin-left: 80px;
+    font-family: $fontInter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #555555;
+    }
+  }
+.pink_bloob {
+  position: absolute;
+  left: 851px;
+  top: 288px;
+  height: 519px;
+  width: 328px;
+  }
+.hot_fix{
+  margin-left: 80px;
+  }
+/*vėliau sugryžti pakoreguot font ir dydį*/
+.btn_Baground {
+  @include flex_center();
+  margin-left: 0px;
+  background-image: url(/imiges/color_gradient.png);
+  background-size: 100%;
+  border: none;
+  border-radius: 35px;
+  width: 170px;
+  height: 70px;
+  cursor: grab;
+  button {
+    background-color: $backGraundColor;
+    border-radius: 31px;
+    border: none;
+    padding: 20;
+    width: 162px;
+    height: 62px;
+    cursor: grab;
+    }
+  }
+.background_gradient {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 182px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 20px;
+  width: 1280px;
+  height: 320px;
+  background: radial-gradient(ellipse at top 907px right 1141px, #ff3998, transparent),//čia tai nežinojau kaip ellipse aprašyt nes reikėjo jos pločio ir auksčio daug laiko sugaišta
+    radial-gradient(ellipse at right 73px top 874px, #ff8139, transparent),
+    radial-gradient(ellipse at right -39px top 888px, #39FFA0, transparent),
+    radial-gradient(ellipse at right 469px top 741px, #ff3939, transparent);
+    h2 {
+      margin-left: 60px;
+      margin-bottom: 10px;
+      font-family: $fontInter;
+      font-size: 40px;
+      font-weight: 500;
+      padding-top: 120px;
+      color: #111111;
+    }
+    p {
+      margin-left: 60px;
+      margin-top: 0px;
+      font-family: $fontInter;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+.flex_a {
+  margin-left: 80px;
+  margin-top: 80px;
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-between;
+    
+  .included_mobile, .excluded_mobile{ 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 30px;
+    color: #999999;
+    }
+  }
+.container {
+  display: flex;
+  }
+.img {
+  height: 40px;
+  width: 40px;
+  }
+br { //čia prisiminiau kad galiu br display none pabandyt todėl html vienur yra br kitur nėra
+  display: none;
+  }
+.container_h2 {
+  margin-left: 80px;
+  h2{
+  font-family: $fontInter;
+  font-size: 48px;
+  font-weight: 500;
+  padding-top: 24px;
+   margin-bottom: 10px;
+  }
+  p {
+      padding-top: 0; 
+      font-family: $fontInter;
+      font-size: 20px;
+      font-weight: 500;
+      color: #555555;
+  }
+  a {
+    font-family: $fontInter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #555555;
+   }
+  }
+.flex_f1 {
+  margin-left: 80px;
+  margin-bottom: 120px;
+  display: flex;
+  .flex_f1_c1, .flex_f1_c2, .flex_f1_c3, .flex_f1_c4 {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    .flex_f1_c1_c1, .flex_f1_c2_c1, .flex_f1_c3_c1, .flex_f1_c4_c1 {
+      padding: 18px;
+      background-color: #EEEEEE;
+      border-radius: 0 0 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-count: 2;
+      column-gap: 50px;
+      .gloop {
+        margin: 0;
+        color: #FF8139;
+        font-size: 12px;
+        font-family: $fontInter;
+        font-weight: 500;
+      }
+      .bid {
+        margin: 0;
+        color: #777777;
+        font-size: 12px;
+        font-family: $fontInter;
+        font-weight: 500;
+      }
+      .item_name_price {
+        color: #111111;
+        font-size: 20px;
+        font-family: $fontInter;
+        font-weight: 500;
+      }
+      .dark3 {
+        margin: 0;
+        color: #777777;
+        font-size: 18px;
+        font-family: $fontInter;
+        font-weight: 400;
+       }
+     }
+   }
+  }
+section {
+  margin-left: 80px;
+  margin-right: 80px;
+  border-top: 2px solid #EEEEEE;
+  width: calc(100%-80px);
+  h6 {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    color: $textColor;
+    font-family: $fontInter;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin-top: 0px;
+    font-family: $fontInter;
+    font-weight: 900, bold;
+    font-size: 56px;
+    }
+  }
+
+.img_green_woman_posision {
+  position: absolute;
+  top: 2208px;
+  left: 933px;
+  height: 467px;
+  width: 206px;
+  }
+.section_b {
+  display: flex;
+  flex-direction: column;
+  height: 265px;
+  border-bottom: 2px #EEEEEE solid;
+  border-top: none;
+  padding-bottom:  60px;
+  p {
+    align-self: flex-start;
+    width: 537px;
+    
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: $fontInter;
+    font-weight: 400;
+    font-size: 20px;
+    color: #555555;
+    }
+  }
+.left_foot {
+  display: flex;
+  flex-direction: column
+  }
+.logo_foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .img_logo {
+    height: 36px;
+    width: 36px;
+    padding-top: 10px;
+    }
+  }
+  .link_stile_foot {
+    text-decoration: none;
+    font-family: Varela Round;
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+  }
+  .font {
+    text-decoration: none;
+    font-family: Inter;
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .flex_r {
+    display: flex;
+    align-items: flex-start;
+    img {
+      padding: 5px;
+      height: 18px;
+      width: 18px;  
+    }
+  }
+  .flex_f_footer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 2;
+    column-gap: 100px;
+  .flex_f_footer_links {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 16px;
+      color: #555555
+      }
+    }
+  }
+  .footer_child {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .Copyright, .exclude_mobile_Copyright {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999999;
+  }
+  .flex_Copyright {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    }
+  }
