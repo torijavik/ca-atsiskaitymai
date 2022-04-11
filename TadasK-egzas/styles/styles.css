@@ -1,0 +1,335 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: static;
+}
+
+.card {
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 12px;
+  color: #ff3998;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.box p {
+  color: lightgray;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  min-height: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.logo {
+  color: black;
+  text-transform: lowercase;
+  font-size: 20px;
+}
+
+.navigacija-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.navigacija-top li {
+  list-style: none;
+}
+
+.navigacija-top a {
+  color: #9e9d9d;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navigacija-top a:hover {
+  color: #ff3998;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #9e9d9d;
+  margin: 5px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.imgbox img {
+  max-width: 500px;
+}
+
+.imgbox2 img {
+  max-width: 250px;
+}
+
+.signupbtn {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: white;
+  width: 100px;
+  cursor: pointer;
+  background: linear-gradient(60deg, orange, red, brown);
+  border: none;
+}
+
+.color-box {
+  margin: auto;
+  background: linear-gradient(60deg, orange, red, brown);
+  width: 80%;
+  padding-top: 100px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+.color-box .textas {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.textas h2 {
+  font-weight: bolder;
+}
+
+.textas p {
+  font-weight: lighter;
+}
+
+.remejai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.korteles {
+  margin: auto;
+  width: 80%;
+}
+
+.korteles .korteliu-link {
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  padding: 50px;
+  margin-top: 10px;
+  padding-left: 106px;
+}
+
+footer p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+footer .tekstas-footer {
+  font-weight: lighter;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-col p {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.footer-col .fab {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.last p {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.kortos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 14px;
+}
+
+.card {
+  padding: 10px;
+  border: none;
+}
+
+.card-body {
+  background-color: #eeeeee;
+}
+
+.sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sub h5 {
+  font-size: small;
+}
+
+.sub h6 {
+  font-size: small;
+  color: #e98246 !important;
+}
+
+.sub2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tektas-korteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tektas-korteles p {
+  font-size: small;
+  color: lightgrey;
+}
+
+@media screen and (max-width: 736px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .navigacija-top {
+    display: none;
+  }
+  .color-box {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 10px;
+    color: #fc6077;
+  }
+  p {
+    font-size: small;
+  }
+  .remejai {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-tekstas li {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
