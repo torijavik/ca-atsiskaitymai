@@ -1,0 +1,307 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+  color: grey;
+}
+h1 {
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  font-size: 12px;
+  color: gray;
+}
+
+h5 {
+  font-size: 8px;
+  color: orange;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+}
+
+button {
+  border-radius: 20px;
+  background-color: white;
+  border-color: fuchsia;
+  padding: 10px;
+  width: 120px;
+  height: 50px;
+}
+
+
+/* Meniu */
+
+#header a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+#header {
+  display: flex;
+  height: 3.25em;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#header > a {
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+}
+
+#header a {
+  padding: 0 1.5em;
+}
+
+#header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+/* Meniu */
+
+/* Top */
+
+#top {
+  padding: 100px 20px;
+}
+
+#top header {
+  color: fuchsia;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+#top img {
+  width: 300px;
+}
+
+#top .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "item-1 item-2";
+}
+
+#top h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Top */
+
+/* Free */
+
+#free .container {
+  border: 5px orange;
+  border-radius: 5px;
+  padding: 10px;
+  background-image: linear-gradient(
+    to top right,
+    violet,
+    red,
+    orange,
+    yellow,
+    green
+  );
+}
+
+#free p {
+  color: black;
+}
+
+/* Free */
+
+/* Promo */
+
+#promo .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#promo img {
+  width: 100px;
+  height: 50px;
+}
+
+/* Promo */
+
+/* Galery*/
+
+section {
+  text-align: left;
+  padding: 1em;
+}
+
+
+
+.width-25 img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.row-block {
+  margin: 5px;
+}
+
+.price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10px 100px;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(238, 236, 236);
+  border-radius: 20px;
+}
+
+/* Galery*/
+
+/* Soon */
+
+#soon .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 100px;
+  grid-template-areas: "item-1 item-2";
+  border-top: 1px solid rgb(223, 220, 220);
+  border-block-end: 1px solid rgb(223, 220, 220);
+  padding: 25px;
+}
+
+#soon img {
+  width: 200px;
+}
+
+#soon header {
+  color: fuchsia;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* Soon */
+
+/* Contact */
+
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact a {
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  margin: 5px;
+}
+
+.soc {
+  margin-right: 150px;
+}
+
+/* Contact */
+
+/* Apacia */
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 10px;
+  color: gray;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Apacia */
+
+/* Mobile */
+@media screen and (max-width: 429px) {
+  #header {
+    display: none;
+  }
+
+  body {
+    font-size: 14pt;
+  }
+
+  #top {
+    padding: 4em 0;
+  }
+
+  .container {
+    padding: 0 15px 0 15px;
+    width: 100%;
+  }
+
+/* Veikia bet nepavyksta 1 isimti */
+
+  #promo .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  }
+
+  #promo img {
+    width: 300px;
+    height: 100px;
+  }
+/* Veikia bet nepavyksta sutvarkyti 2/1 */
+ #contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} 
+
+/* Burgeris */
+/* Nepavyksta i desine ir palikti logo */
+
+  #headerToggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 2.25em;
+    width: 2.25em;
+    left: 0;
+    top: 0;
+    position: fixed;
+  }
+
+  .toggle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gray;
+    border-radius: 0.35em;
+    top: 0.5em;
+    left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle > div {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+  }
+}
