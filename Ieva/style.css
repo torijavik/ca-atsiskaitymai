@@ -11,7 +11,7 @@ body {
   display: none;
 }
 
-nav div.container {
+nav .container {
   padding: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,21 +21,21 @@ nav div.container {
           justify-content: space-between;
 }
 
-nav div.container div.navlogo {
+nav .container .navlogo {
   max-width: 100%;
 }
 
-nav div.container div.navlinks a {
+nav .container .navlinks a {
   margin: 0 0.5rem;
   text-decoration: none;
   color: black;
 }
 
-nav div.container div.navlinks a:nth-last-child(1) {
+nav .container .navlinks a:nth-last-child(1) {
   color: #f129a7;
 }
 
-section.signup div.container {
+.signup .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,18 +47,18 @@ section.signup div.container {
   position: relative;
 }
 
-section.signup div.container img {
+.signup .container img {
   height: 35rem;
   width: 35rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-section.signup div.container div.text {
+.signup .container .text {
   margin-right: 5rem;
 }
 
-section.signup div.container h1 {
+.signup .container h1 {
   width: 100%;
   font-weight: 800;
   font-size: 4.5rem;
@@ -66,17 +66,17 @@ section.signup div.container h1 {
   white-space: normal;
 }
 
-section.signup div.container h3 {
+.signup .container h3 {
   color: #f129a7;
   font-weight: 800;
   font-size: 0.9rem;
 }
 
-section.signup div.container p {
+.signup .container p {
   color: darkslategrey;
 }
 
-section.signup div.container button {
+.signup .container button {
   color: black;
   border: solid 3.5px transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
@@ -89,7 +89,7 @@ section.signup div.container button {
   padding: 1rem 2rem;
 }
 
-section.signup div.container button:hover {
+.signup .container button:hover {
   font-weight: bolder;
   -webkit-box-shadow: 0px 0px 0px #fff inset;
           box-shadow: 0px 0px 0px #fff inset;
@@ -98,26 +98,26 @@ section.signup div.container button:hover {
   cursor: pointer;
 }
 
-section.signup:last-of-type div.container {
+.signup:last-of-type .container {
   border-bottom: solid 1px lightgrey;
   border-top: solid 1px lightgrey;
   margin: 0 2.5rem;
   padding-bottom: 0;
 }
 
-section.signup:last-of-type div.container div.text {
+.signup:last-of-type .container .text {
   margin-right: 2rem;
 }
 
-section.signup:last-of-type div.container div.text h1 {
+.signup:last-of-type .container .text h1 {
   font-size: 4rem;
 }
 
-section.earlybirds {
+.earlybirds {
   background-color: white;
 }
 
-section.earlybirds div.container {
+.earlybirds .container {
   margin: 0 2rem;
   background-image: url(images/background.png);
   background-size: cover;
@@ -126,11 +126,11 @@ section.earlybirds div.container {
   border-radius: 15px;
 }
 
-section.earlybirds h1 {
+.earlybirds h1 {
   font-weight: 400;
 }
 
-section.companies div.container {
+.companies .container {
   margin: 4rem 0 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,24 +141,24 @@ section.companies div.container {
       justify-content: space-around;
 }
 
-section.companies div.container img {
+.companies .container img {
   height: 2.5rem;
 }
 
-section.products div.container {
+.products .container {
   padding: 3.5rem;
 }
 
-section.products div.container a {
+.products .container a {
   color: darkslategrey;
   font-weight: 500;
 }
 
-section.products div.container p {
+.products .container p {
   color: darkslategrey;
 }
 
-section.products div.container div.sales {
+.products .container .sales {
   position: relative;
   margin-top: 3rem;
   overflow-x: auto;
@@ -169,11 +169,11 @@ section.products div.container div.sales {
   display: flex;
 }
 
-section.products div.container div.sales div.sale {
+.products .container .sales .sale {
   margin: 0 1rem 0 1rem;
 }
 
-section.products div.container div.sales div.sale div.details {
+.products .container .sales .sale .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +184,7 @@ section.products div.container div.sales div.sale div.details {
   font-size: 0.9rem;
 }
 
-section.products div.container div.sales div.sale div.name-price {
+.products .container .sales .sale .name-price {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,24 +199,24 @@ section.products div.container div.sales div.sale div.name-price {
   font-weight: bold;
 }
 
-section.products div.container div.sales div.sale div.name-price p.name {
+.products .container .sales .sale .name-price p.name {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-section.products div.container div.sales div.sale div.name-price p.price {
+.products .container .sales .sale .name-price p.price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 1rem;
 }
 
-section.products div.container div.sales div.sale div.name-price p.price img {
+.products .container .sales .sale .name-price p.price img {
   margin: 0 0.2rem;
 }
 
-section.products div.container div.sales div.sale div.image-text {
+.products .container .sales .sale .image-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,28 +225,28 @@ section.products div.container div.sales div.sale div.image-text {
           justify-content: space-between;
 }
 
-section.products div.container div.sales div.sale div.image-text p {
+.products .container .sales .sale .image-text p {
   line-height: 0.1;
 }
 
-section.products div.container div.sales div.sale div.image-text p.series {
+.products .container .sales .sale .image-text p.series {
   color: #fb8518;
   font-size: 0.7rem;
 }
 
-section.products div.container div.sales div.sale div.image-text p.topbid {
+.products .container .sales .sale .image-text p.topbid {
   color: darkslategrey;
   font-size: 0.6rem;
 }
 
-section.products div.container div.sales div.sale div.description {
+.products .container .sales .sale .description {
   background-color: lightgrey;
   padding: 1rem;
   border-radius: 0 0 15px 15px;
   margin-top: -6px;
 }
 
-footer div.container {
+footer .container {
   padding: 2.5rem 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,7 +257,7 @@ footer div.container {
   color: darkslategrey;
 }
 
-footer div.container div.footer-right {
+footer .container .footer-right {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,11 +270,11 @@ footer div.container div.footer-right {
       flex-flow: row wrap;
 }
 
-footer div.container div.footer-right h3 {
+footer .container .footer-right h3 {
   font-size: 1rem;
 }
 
-footer div.container div.footer-right div {
+footer .container .footer-right div {
   width: 15%;
   margin: 0 1.5rem 0 1.5rem;
   display: -webkit-box;
@@ -286,13 +286,13 @@ footer div.container div.footer-right div {
           flex-direction: column;
 }
 
-footer div.container div.footer-right div a {
+footer .container .footer-right div a {
   text-decoration: none;
   color: darkslategrey;
   line-height: 2rem;
 }
 
-footer div.container div.footer-left div.socmedia {
+footer .container .footer-left .socmedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,13 +301,13 @@ footer div.container div.footer-left div.socmedia {
           align-items: space-evenly;
 }
 
-footer div.container div.footer-left div.socmedia img {
+footer .container .footer-left .socmedia img {
   width: 17px;
   height: 18px;
   margin: 0.5rem;
 }
 
-div.copyright {
+.copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,13 +325,13 @@ div.copyright {
 /* Global css end */
 /* Mobile version */
 @media screen and (max-width: 768px) {
-  nav div.container {
+  nav .container {
     padding: 1.5rem;
   }
-  nav div.container div.navlinks {
+  nav .container .navlinks {
     display: none;
   }
-  nav div.container div.navlogo img {
+  nav .container .navlogo img {
     max-width: 70%;
   }
   #menu {
@@ -339,7 +339,7 @@ div.copyright {
     height: 30px;
     width: 30px;
   }
-  section.signup div.container {
+  .signup .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,87 +349,83 @@ div.copyright {
     line-height: 1.5rem;
     height: 100%;
   }
-  section.signup div.container h1 {
+  .signup .container h1 {
     margin-top: 0.5rem;
     font-size: 2rem;
     line-height: normal;
   }
-  section.signup div.container h3 {
+  .signup .container h3 {
     margin-bottom: 0;
     font-size: 0.7rem;
   }
-  section.signup div.container div.text {
+  .signup .container .text {
     margin-right: 0;
   }
-  section.signup div.container img {
+  .signup .container img {
     position: absolute;
     top: -1rem;
     right: -150px;
     height: 20rem;
     width: 20rem;
   }
-  section.signup:last-of-type div.container {
+  .signup:last-of-type .container {
     padding-bottom: 0;
     margin: 0;
   }
-  section.signup:last-of-type div.container div.text h1 {
+  .signup:last-of-type .container .text h1 {
     font-size: 2.5rem;
     line-height: normal;
   }
-  section.signup:last-of-type div.container img {
+  .signup:last-of-type .container img {
     position: right;
     top: 2rem;
     right: -140px;
     height: 23rem;
     width: 23rem;
   }
-  section.signup:last-of-type div.text {
+  .signup:last-of-type .text {
     padding-bottom: 2rem;
   }
-  section.earlybirds div.container {
+  .earlybirds .container {
     background-position: -200px;
     margin: 2rem 0;
     border-radius: 0;
-    padding: 4.5rem 0rem 1rem 1remrem;
+    padding: 4.5rem 0rem 1rem 1;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  section.earlybirds div.container h1 {
+  .earlybirds .container h1 {
     font-size: 1.7rem;
     font-weight: 500;
   }
-  section.companies div.container {
+  .companies .container {
     margin-bottom: 0;
     margin-top: 0.5rem;
   }
-  section.companies div.container img {
+  .companies .container img {
     width: 35%;
     height: 2.5rem;
     margin: 1rem;
   }
-  section.companies div.container img:last-child {
-    display: none;
-  }
-  section.products div.container {
+  .products .container {
     padding: 2rem 0rem 2rem 1.5rem;
   }
-  section.products div.container h1,
-  section.products div.container p {
+  .products .container h1,
+  .products .container p {
     margin-right: 1.5rem;
   }
-  section.products div.container footer div.container {
+  .products .container footer .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     padding: 2.5rem 1.5rem;
   }
-  footer div.container div.footer-right {
+  footer .container .footer-right {
     width: 100%;
-    margin-top: 2rem;
-    margin-left: -1rem;
+    margin-left: 3rem;
   }
-  footer div.container div.footer-right div {
+  footer .container .footer-right div {
     width: 30%;
     margin: 0 1.5rem 0 1.5rem;
     display: -webkit-box;
@@ -440,11 +436,11 @@ div.copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div.copyright {
+  .copyright {
     margin: 3rem 1rem 3rem 1rem;
     color: grey;
   }
-  div.copyright p:last-of-type {
+  .copyright p:last-of-type {
     display: none;
   }
 }

@@ -11,14 +11,14 @@ body {
   display: none;
 }
 
-nav div.container {
+nav .container {
   padding: 4.5rem;
   display: flex;
   justify-content: space-between;
-  div.navlogo {
+  .navlogo {
     max-width: 100%;
   }
-  div.navlinks {
+  .navlinks {
     a {
       margin: 0 0.5rem;
       text-decoration: none;
@@ -30,7 +30,7 @@ nav div.container {
   }
 }
 
-section.signup div.container {
+.signup .container {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem 5% 2.5rem 4.5rem;
@@ -41,7 +41,7 @@ section.signup div.container {
     width: 35rem;
     object-fit: contain;
   }
-  div.text {
+  .text {
     margin-right: 5rem;
   }
   h1 {
@@ -85,12 +85,12 @@ section.signup div.container {
   }
 }
 
-section.signup:last-of-type div.container {
+.signup:last-of-type .container {
   border-bottom: solid 1px lightgrey;
   border-top: solid 1px lightgrey;
   margin: 0 2.5rem;
   padding-bottom: 0;
-  div.text {
+  .text {
     margin-right: 2rem;
     h1 {
       font-size: 4rem;
@@ -98,9 +98,9 @@ section.signup:last-of-type div.container {
   }
 }
 
-section.earlybirds {
+.earlybirds {
   background-color: white;
-  div.container {
+  .container {
     margin: 0 2rem;
     background-image: url(images/background.png);
     background-size: cover;
@@ -113,7 +113,7 @@ section.earlybirds {
   }
 }
 
-section.companies div.container {
+.companies .container {
   margin: 4rem 0 4rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -123,7 +123,7 @@ section.companies div.container {
   }
 }
 
-section.products div.container {
+.products .container {
   padding: 3.5rem;
   a {
     color: darkslategrey;
@@ -132,22 +132,22 @@ section.products div.container {
   p {
     color: darkslategrey;
   }
-  div.sales {
+  .sales {
     position: relative;
     margin-top: 3rem;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     display: flex;
-    div.sale {
+    .sale {
       margin: 0 1rem 0 1rem;
-      div.details {
+      .details {
         display: flex;
         justify-content: space-between;
         color: rgb(47, 79, 48);
         font-size: 0.9rem;
       }
-      div.name-price {
+      .name-price {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -165,7 +165,7 @@ section.products div.container {
           }
         }
       }
-      div.image-text {
+      .image-text {
         display: flex;
         justify-content: space-between;
         p {
@@ -180,7 +180,7 @@ section.products div.container {
           font-size: 0.6rem;
         }
       }
-      div.description {
+      .description {
         background-color: lightgrey;
         padding: 1rem;
         border-radius: 0 0 15px 15px;
@@ -190,12 +190,12 @@ section.products div.container {
   }
 }
 
-footer div.container {
+footer .container {
   padding: 2.5rem 3.5rem;
   display: flex;
   justify-content: space-between;
   color: darkslategrey;
-  div.footer-right {
+  .footer-right {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -215,7 +215,7 @@ footer div.container {
       }
     }
   }
-  div.footer-left div.socmedia {
+  .footer-left .socmedia {
     display: flex;
     align-items: space-evenly;
     img {
@@ -226,7 +226,7 @@ footer div.container {
   }
 }
 
-div.copyright {
+.copyright {
   display: flex;
   justify-content: space-between;
   margin: 3rem 3.5rem 3rem 3.5rem;
@@ -240,12 +240,12 @@ div.copyright {
 
 /* Mobile version */
 @media screen and (max-width: 768px) {
-  nav div.container {
+  nav .container {
     padding: 1.5rem;
-    div.navlinks {
+    .navlinks {
       display: none;
     }
-    div.navlogo img {
+    .navlogo img {
       max-width: 70%;
     }
   }
@@ -256,7 +256,7 @@ div.copyright {
     width: 30px;
   }
 
-  section.signup div.container {
+  .signup .container {
     display: flex;
     overflow: hidden;
     position: relative;
@@ -272,7 +272,7 @@ div.copyright {
       margin-bottom: 0;
       font-size: 0.7rem;
     }
-    div.text {
+    .text {
       margin-right: 0;
     }
     img {
@@ -284,11 +284,11 @@ div.copyright {
     }
   }
 
-  section.signup:last-of-type {
-    div.container {
+  .signup:last-of-type {
+    .container {
       padding-bottom: 0;
       margin: 0;
-      div.text h1 {
+      .text h1 {
         font-size: 2.5rem;
         line-height: normal;
       }
@@ -300,16 +300,16 @@ div.copyright {
         width: 23rem;
       }
     }
-    div.text {
+    .text {
       padding-bottom: 2rem;
     }
   }
 
-  section.earlybirds div.container {
+  .earlybirds .container {
     background-position: -200px;
     margin: 2rem 0;
     border-radius: 0;
-    padding: 4.5rem 0rem 1rem 1remrem;
+    padding: 4.5rem 0rem 1rem 1;
     background-size: cover;
     background-repeat: no-repeat;
     h1 {
@@ -318,7 +318,7 @@ div.copyright {
     }
   }
 
-  section.companies div.container {
+  .companies .container {
     margin-bottom: 0;
     margin-top: 0.5rem;
     img {
@@ -326,27 +326,23 @@ div.copyright {
       height: 2.5rem;
       margin: 1rem;
     }
-    img:last-child {
-      display: none;
-    }
   }
 
-  section.products div.container {
+  .products .container {
     padding: 2rem 0rem 2rem 1.5rem;
     h1,
     p {
       margin-right: 1.5rem;
     }
-    footer div.container {
+    footer .container {
       flex-flow: row wrap;
       padding: 2.5rem 1.5rem;
     }
   }
 
-  footer div.container div.footer-right {
+  footer .container .footer-right {
     width: 100%;
-    margin-top: 2rem;
-    margin-left: -1rem;
+    margin-left: 3rem;
     div {
       width: 30%;
       margin: 0 1.5rem 0 1.5rem;
@@ -355,7 +351,7 @@ div.copyright {
     }
   }
 
-  div.copyright {
+  .copyright {
     margin: 3rem 1rem 3rem 1rem;
     color: grey;
     p:last-of-type {
