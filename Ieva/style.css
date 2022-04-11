@@ -398,14 +398,8 @@ footer .container .footer-left .socmedia img {
     font-size: 1.7rem;
     font-weight: 500;
   }
-  .companies .container {
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-  }
-  .companies .container img {
-    width: 35%;
-    height: 2.5rem;
-    margin: 1rem;
+  .company img {
+    margin: 0.3rem;
   }
   .products .container {
     padding: 2rem 0rem 2rem 1.5rem;
