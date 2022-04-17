@@ -1,0 +1,288 @@
+/* Global css */
+
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 4em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;  
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+    padding-top: 4em;
+    padding-right: 4em;
+}
+
+.left h1 {
+    font-size: 5rem;
+}
+
+.left h2 {
+    font-size: 2rem;
+}
+
+.left p {
+    color: grey;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 0;
+}
+
+h2 {
+    color: rgb(224, 33, 182);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left a {
+    font-size: 20px;
+    color: black;
+    border: 4px solid orangered;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.right img {
+    height: 26rem;
+}
+
+.vaivorykste {
+    background-image: linear-gradient(rgb(231, 73, 73), orange, rgb(231, 73, 73), green);
+    border-radius: 15px;
+    padding-left: 1.5em;
+    width: 100%;
+}
+
+.vaivorykste-tekstas h3 {
+    font-size: 3em;
+    font-weight: 500;
+    color: black;
+    padding-top: 2em;
+}
+
+.vaivorykste-tekstas p {
+    font-size: 20px;
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+.logotipai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.logotipai img {
+    max-width: 100px;
+}
+
+.aukcionas {
+    padding: 2em 0;
+}
+
+.aukcionas-tekstas h3 {
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+}
+
+.aukcionas-tekstas p {
+    font-size: 20px;
+    color: grey;
+    padding: 1em 0;
+}
+
+.aukcionas-korteles img {
+    float: left;
+    width: 24%;
+    padding: 5px;
+    padding-bottom: 3em;
+}
+
+.greitai {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+    padding-right: 4em;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+}
+
+.kaire p {
+    color: grey;
+    padding-bottom: 40px;
+}
+
+.kaire a {
+    font-size: 20px;
+    color: black;
+    border: 4px solid orangered;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.desine img {
+    height: 26rem;
+}
+
+.greitai h3 {
+    color: rgb(224, 33, 182);
+}
+
+.greitai h1 {
+    font-size: 70px;
+}
+
+div.pask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;  
+}
+
+.antr li {
+    list-style-type: none;
+    padding: 8px;
+}
+
+.antr li:first-child{
+    padding-bottom: 14px;
+}
+
+div.antr {
+    display: flex;
+    color: grey;
+    padding: 40px;
+}
+
+div.antr a {
+    color:grey;
+    text-decoration: none;
+}
+
+.edita {
+    float:left;
+    font-size: 14px;
+    color: gray;
+    padding: 1em 0;
+}
+
+.pab {
+    float: right;
+    font-size: 14px;
+    color: gray;
+    padding: 1em 0;
+}
+/* End Global css */
+
+@media screen and (max-width: 736px) {
+    #header {
+        display: none;
+    }
+
+    body {
+        font-size: 14pt;
+    }
+
+    .left h1 {
+        font-size: 2rem;
+    }
+
+    .left h2 {
+        font-size: 1rem;
+    }
+
+    .kaire h1 {
+        font-size: 1.5em;
+        padding-bottom: 0.3em;
+    }
+
+    .vaivorykste-tekstas h3 {
+        font-size: 1.75em;
+        font-weight: 300;
+        padding-top: 1em;
+    }
+    
+    .logotipai {
+        padding: 0.5em 0;
+        margin-top: 1.5rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .desine img {
+        height: 16rem;
+        padding-left: 2em;
+    }
+
+    .right img {
+        height: 16rem;
+        padding-left: 2em;
+    }
+    
+    .antr li {
+        font-size: 0.7em;
+        padding: 2px;
+        flex-wrap: wrap;
+    }
+    
+    .antr li:first-child{
+        padding-bottom: 7px;
+    }
+    
+    div.antr {
+        padding: 0px;
+    }
+
+    .pir {
+        font-size: 0.6em;
+    }
+    
+    .aukcionas {
+        padding: 0.7em 0;
+    }
+
+    .aukcionas-tekstas h3 {
+        font-size: 1.5em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+    }
+    
+}
