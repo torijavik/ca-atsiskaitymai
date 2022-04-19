@@ -1,0 +1,360 @@
+body {
+  width: 1440px;
+  margin: auto;
+  background-color: white;
+  border-radius: 1px solid gray;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header img {
+  height: auto;
+  width: 300px;
+  vertical-align: middle;
+}
+
+header nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: black;
+}
+nav a:last-child {
+  margin-right: 0;
+  color: palevioletred;
+}
+header nav a:hover {
+  color: blue;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  margin: auto 0;
+  background-color: white;
+}
+
+.robot {
+  align-items: center;
+  justify-content: right;
+  display: flex;
+  float: right;
+  width: 50%;
+  margin: auto 0;
+}
+#about img {
+  text-align: right;
+}
+#about {
+  margin-top: 70px;
+  text-align: justify;
+  height: 600px;
+  width: 100%;
+}
+h1 {
+  margin-top: 50px;
+  color: palevioletred;
+  font-size: medium;
+}
+.bold {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-size: medium;
+}
+
+button {
+  border-radius: 0.35em;
+  padding: 0.75em 2.5em 0.75em 2.5em;
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, rgb(255, 0, 98), orange, rgb(120, 241, 120));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 24px;
+  color: black;
+  background-color: white;
+}
+
+#free {
+  border-radius: 25px;
+  margin-top: 70px;
+  position: relative;
+  width: 1440px;
+  height: 320px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 98),
+    orange,
+    rgb(120, 241, 120)
+  );
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: end;
+  padding: 0 0 20px 40px;
+}
+#socialmedia {
+  padding: 40px;
+}
+#socialmedia img {
+  width: 160px;
+  height: 36px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+#auction {
+  padding: 40px;
+}
+.auctionheader p a{
+  color: black;
+}
+
+.textbox a {
+  color: black;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+h4 {
+  font-size: small;
+  color: orangered;
+}
+h6 {
+  color: gray;
+}
+.flex-container {
+  display: flex;
+  width: 222px;
+}
+.ithem2 {
+  text-align: right;
+}
+.flex-child {
+  flex: 1;
+}
+
+.photobox {
+  height: 300px;
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+.girl {
+  align-items: center;
+  justify-content: right;
+  display: flex;
+  float: right;
+  width: 50%;
+  margin: auto 0;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 750px 360px 360px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+th,
+td {
+  width: 110px;
+}
+.grid-item1 td,
+th {
+  width: 216px;
+}
+footer {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.right {
+  float: right;
+}
+.footerbottom {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14pt;
+  }
+  nav a {
+    display: none;
+  }
+  header {
+    width: 750px;
+    height: auto;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+  }
+  header img {
+    text-align: left;
+  }
+  body {
+    font-size: 14pt;
+    width: 750px;
+  }
+  .flex {
+    display: flex;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  main {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  main #about {
+    width: 100%;
+    margin: auto 0;
+  }
+  #free {
+    border-radius: 0;
+  }
+  .bottom {
+    padding: 15px;
+  }
+  #socialmedia {
+    padding: 40px 20px 40px 15px;
+  }
+  #auction {
+    padding: 40px 20px 40px 15px;
+  }
+  .photobox {
+    width: 100%;
+    margin: auto;
+  }
+  .auctionheader {
+    display: block;
+    width: 400px;
+    flex-wrap: wrap;
+  }
+  .greengirl {
+    width: 100%;
+  }
+  .headerToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.25em;
+    width: 2.25em;
+    right: 0;
+    top: 0;
+    position: fixed;
+  }
+
+  .toggle {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.35em;
+    top: 0.5em;
+    right: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle > div {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  .column {
+    display: flex;
+    width: 33%;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .column img {
+    margin: auto;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+  section {
+    width: 100%;
+    text-align: left;
+  }
+
+  .grid-container {
+    display: block;
+    max-width: 750px;
+    margin: auto 0;
+  }
+  .grid-item1 {
+    grid-area: 1 / span 2 / 3;
+  }
+  .grid-item2 {
+    grid-area: 2 / span 1 / 3;
+  }
+  .grid-item3 {
+    grid-area: 3 / span 1 / 2;
+  }
+  .footerbottom {
+    display: none;
+  }
+}
