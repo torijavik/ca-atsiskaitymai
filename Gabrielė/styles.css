@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+    margin-left:1%;
+    margin-right:1%;
+    margin-bottom:1%;
+    margin-top:1%;
+}
+
+.img {float: right; margin-right: 400px;}
+
+.signup {color: pink;}
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #header {
+    display: flex;
+    height: 3.25em;
+    width: 1300px;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    position: fixed;
+  }
+
+
+  
+  #header a {
+    padding: 0 1.5em;
+  }
+  
+  #header nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  
+  #banner {
+   
+    padding: 40px;
+    border: 3px solid white;
+  }
+
+ .float {
+    width: 50%;
+    float: :left;
+    padding: 20px;
+    border: 2px solid white;
+  }
+
+  .button {background-color: white;
+  border: 2px solid purple;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration:;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  }
+
+   
+  .tiles {
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+    height: 30vh;
+    width: 70%;
+    border: 2px solid white;
+    color: black;
+    padding:  30px;
+    font-size: 30px;
+    border-radius: 15px;
+    }
+
+.today {display: block;}
+
+.freenft{ font-size: larger;}
+  
+.soon {color: pink;
+  text-transform: uppercase;}
+
+.img2 {
+  height: 80px;
+  
+  min-width:auto;
+  font-size: 0;
+  line-height: 0;
+  align-self: auto;
+}
+
+#img3 { justify-content: space-evenly;
+display: inline-block;}
+
+.img4 { height: 400px;}
+
+#two
+{height:100px;
+}
+
+  #contact {
+    display: flex;
+  }
+  
+  
+  #contact > section:nth-child(2n - 1) {
+    width: 60%;
+  }
+  
+ 
+  #menu > a {
+    display: none;
+  }
+  
+  #menu .links {
+    list-style: none;
+    display: flex;
+  }
+
+
+
+.column:first-child {
+    margin: 0;
+}
+  
+  footer 
+  {margin: 0;}
+  
+  #meniu .links {list-style: none;
+  display: flex}
+
+  @media screen and (max-width: 550px) {
+    #header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    #menu .links{
+      flex-direction: column;
+    }
+  
+    #menu > a {
+      display: none;
+    }
+  
+    #menu  .links {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+    }
+  
+    #menu  .links li {
+      padding: 5px 0;
+    }
+  
+    #banner {
+      padding: 11em 0 1em 0;
+    }
+  }
+  
